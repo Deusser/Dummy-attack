@@ -4,7 +4,6 @@ def dice(damage):
     dice = random.randint(1, 20)
     return dice
 
-#attack_random25 = random.randint(-25, 25)
 #характеристики игрока
 player = {
     'name': '',
@@ -37,6 +36,7 @@ def attack (attacker, attacked):
     elif dice(1) < attacked['dodge']:
         print('Промах')
 combat = 0
+#Цикл боя
 while combat >= 0:
     if enemy['health'] <= 0:
         print('Победил ' + player['name'] + "!" )
